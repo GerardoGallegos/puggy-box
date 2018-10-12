@@ -5,10 +5,10 @@ export default Route.extend({
   model () {
     // TODO - Get products here from
     return [
-      { _id: uid(), name: 'Puggy T-shirt' },
-      { _id: uid(), name: 'Puggy Bone' },
-      { _id: uid(), name: 'Puggy Muffin' },
-      { _id: uid(), name: 'Puggy shoes' }
+      { _id: uid(), name: 'Puggy T-shirt', pricing: 120 },
+      { _id: uid(), name: 'Puggy Bone', pricing: 110 },
+      { _id: uid(), name: 'Puggy Muffin', pricing: 50 },
+      { _id: uid(), name: 'Puggy shoes', pricing: 210 }
     ]
   }
 })

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan:300,400,700');
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  border: 1px solid rgb(234, 234, 234);
+  margin: 1em;
+  border-radius: 3px;
+  width: 300px;
+  box-shadow: 1px 3px 14px rgba(0, 0, 0, 0);
+  transition: 300ms ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card>a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+
+.product-card:hover {
+  box-shadow: 1px 3px 14px rgba(0, 0, 0, 0.3);
+}
+
+.product-card_img {
+  width: 100%;
+}
+
+.product-card_name {
+  font-size: 25px;
+  font-family: 'Kodchasan', sans-serif;
+
+}
+
+.product-card_pricing {
+  width: 100%;
+  min-height: 3em;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFF;
+  position: absolute;
+  text-align: center;
+  will-change: transform;
+  transition: transform 150ms ease-out;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card_pricing--open {
+  transform: translateY(-100%);
+}

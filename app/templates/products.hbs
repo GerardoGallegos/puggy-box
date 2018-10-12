@@ -1,8 +1,6 @@
-<ul>
+<div class="products">
   {{#each model as |product|}}
-    {{#link-to "products.product" product._id}}
-      <li>{{ product.name }}</li>
-    {{/link-to}}
+    {{product-card product=product}}
   {{/each}}
-</ul>
+</div>
 {{outlet}}
